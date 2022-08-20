@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <section class="border w-[80%] mx-auto my-7 bg-gray-200">
+        <h1 class="text-5xl font-medium text-center mt-4">Finance Manager</h1>
+        <div class="my-7 flex flex-col md:flex-row justify-evenly">
+            <img src="images/learning_974d1ea91064b0ca0889d95dc301280d.jpg" alt class="md:w1/2 shrink-0 md:rounded">
+            <div class="text-center my-7 space-y-4 flex flex-col justyfy-center items-center">
+                <h2 class="text-xl font-medium">Income</h2>
+                <div class="flex justify-center gap-3">
+                    <label for="income" class="text-lg font-medium">Income:</label>
+                    <input type="text" placeholder="your Income" class="border rounded p-[3px] bg-zinc-300"
+                        name="income" id="income">
+                </div>
+                <h2 class="text-xl font-medium">Expenses</h2>
+                <div class="flex justify-center gap-8">
+                    <label for="food" class="text-lg font-medium">Food:</label>
+                    <input type="text" placeholder="Food expense" class="border rounded p-[3px]  bg-zinc-300"
+                        name="food" id="food">
+                </div>
+                <div class="flex justify-center gap-3">
+                    <label for="rent" class="text-lg font-medium">Rent:</label>
+                    <input type="text" placeholder="Rent expense" class="border rounded p-[3px] bg-zinc-300" name="rent"
+                        id="rent">
+                </div>
+                <div class="flex justify-center gap-3">
+                    <label for="clothes" class="text-lg font-medium">Clothes:</label>
+                    <input type="text" placeholder="Clothes expense" class="border rounded p-[3px]  bg-zinc-300"
+                        name="clothes" id="clothes">
+                </div>
+                <!-- <div class="flex justify-center gap-8">_</div> -->
+                <button id="calculate" class="px-6 py-2 bg-blue-400 text-mediam rounded shadow-md">Calculate</button>
+                <h2 id="total-expense" class="text-xl font-medium">Total Expenses: $0</h2>
+                <h2 id="balance" class="text-xl font-medium">balance: $0</h2>
+
+
+                <div class="flex justify-center items-center gap-7">
+                    <label for="save" class="text-lg font-medium flex justify-center items-center">Save</label>
+                    <input type="text" placeholder="Discount"
+                        class="border rounded p-[3px]  w-24 placeholder:text-center bg-zinc-300" name="rent"
+                        id="save-input">
+                    <p class="flex justify-center items-center">%</p>
+                    <button id="save"
+                        class="px-6 py-2 bg-blue-400 text-white font-medium rounded shadow-md">Save</button>
+                </div>
+                <h2 id="saving-amount" class="text-xl font-medium">Saving Amount :$0</h2>
+                <h2 id="remaining-amount" class="text-xl font-medium">Remaining Balance :$0</h2>
+
+            </div>
+        </div>
+    </section>
+    <script src="Js/script.js"></script>
+</body>
+
+</html>
